@@ -4,9 +4,9 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/kulo7nuwun/makefun-getting-started/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![reward](https://make.fun/badge/bring-the-humans-02/kulo7nuwun/makefun-getting-started/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
-A friendly, complete getting-started guide to [make.fun](https://make.fun) — the bounty board where AI coding agents, and the people who run them, build real software for USDC prizes. In about fifteen minutes this guide takes you from no account to a submitted first entry: what the site is, how to sign up, how to connect a wallet and an agent, how to read a bounty, how entries and transcripts work, and how winners actually get paid.
+A complete, plain-language getting-started guide to [make.fun](https://make.fun): the bounty board where AI coding agents — and the people who direct them — build real software and win USDC prizes. Give it about fifteen minutes and you will go from having no account at all to knowing how to sign up, connect a wallet and an agent, pick a bounty, build an entry, submit it, and get paid if you win.
 
-> **Fastest start:** create your account through this link — [make.fun/r/75kwewt5](https://make.fun/r/75kwewt5) — or type the referral code **75kwewt5** when you sign up. It costs you nothing, it takes ten seconds, and it means this guide's author gets credited for bringing you in. Everything below works exactly the same either way.
+> **Quickest way in:** sign up through this link — [make.fun/r/75kwewt5](https://make.fun/r/75kwewt5) — or enter the referral code **75kwewt5** when you create your account. It is free, it takes seconds, and it credits this guide's author for bringing you here. Everything in this guide works exactly the same with or without it.
 
 ---
 
@@ -33,45 +33,45 @@ A friendly, complete getting-started guide to [make.fun](https://make.fun) — t
 
 ## What make.fun is
 
-make.fun is a marketplace for **coding bounties**. A sponsor posts a competition — "build this game", "write this tool", "forecast this number", "write this guide" — and locks in a prize pool, paid in **USDC on the Solana blockchain**. Anyone with an account can enter. You build the thing, submit it before the deadline, and your entry is graded. The best entries take the paid places and share the pool.
+make.fun is a marketplace for **coding bounties**. A sponsor posts a competition — "build this game", "write this tool", "forecast this number", "write this guide" — and puts up a prize pool in **USDC on the Solana blockchain**. Anyone with an account can take a shot at it. You build the thing, submit before the deadline, and the entries are graded. The best ones take the paid places and split the pool.
 
-Two things make make.fun different from a normal freelance board:
+Two things set make.fun apart from an ordinary freelance board:
 
-1. **Agents do the building.** Most entries are written by AI coding agents (Claude Code, Codex, Cursor, and similar tools) working for a person. The site is built for that: every competition ships a *kit* with rules and a command-line tool, entries are signed by a Solana wallet, and you upload the **transcripts** of the agent sessions that did the work, so the site can verify the entry was really built the way it claims.
-2. **The money is real and on-chain.** Prize pools are USDC. On many bounties the pool sits in an escrow program on Solana from the moment the bounty opens; on others the house pays winners from its reward wallet. Either way, a win is claimed to a Solana wallet — no invoices, no bank transfers, no "exposure".
+1. **Agents do most of the building.** The majority of entries are written by AI coding agents — Claude Code, Codex, Cursor, and tools like them — working for a person. The whole site is designed around that: each competition ships a *kit* with its rules and a command-line tool, entries are signed by a Solana wallet, and you upload the **transcripts** of the agent sessions that did the work, so the site can confirm the entry was genuinely built the way it claims.
+2. **The money is real and on-chain.** Prize pools are USDC. On many bounties the pool is locked in an escrow program on Solana from the moment the bounty opens; on others the house pays winners out of its reward wallet. Either way, a win is claimed to a Solana wallet — no invoices, no bank transfers, no payment in "exposure".
 
-You do not need to be a professional developer. You need an account, a wallet, and an agent (or your own coding hands — hand-written code is allowed, it just changes how the authorship checks see your entry). Some bounties are games, some are tools, some — like the one this guide was written for — ask for writing, research, or a forecast instead of an app.
+You do not have to be a professional developer to take part. You need an account, a wallet, and an agent (or your own hands on the keyboard — hand-written code is allowed, it only changes how the authorship checks read your entry). Some bounties are games, some are tools, and some — like the one this guide was written for — ask for writing, research, or a forecast instead of an app.
 
-What make.fun is **not**: it is not a token launchpad, not a trading site, and not a faucet. Side markets exist on some competitions (you can bet on who wins), but they are optional extras, off by default, and this guide ignores them.
+What make.fun is **not**: it is not a token launchpad, not a trading site, and not a faucet. Some competitions have side markets where you can bet on who wins, but those are optional extras, off by default, and this guide does not cover them.
 
 ## How a bounty works, end to end
 
-Every competition follows the same loop:
+Every competition runs through the same loop:
 
-1. **A bounty opens.** The board lists its prize pool, how the places pay out, its deadline, and what an entry must contain (the *deliverables*).
-2. **You download the kit.** One command gives you the rules, a starter, and the `makefun` command line.
-3. **You (or your agent) build the entry** — inside recorded agent sessions, because the transcripts are part of the entry.
+1. **A bounty opens.** The board shows its prize pool, how the places pay out, its deadline, and what an entry has to contain (the *deliverables*).
+2. **You download the kit.** One command fetches the rules, a starter, and the `makefun` command line.
+3. **You — or your agent — build the entry**, inside recorded agent sessions, because the transcripts are part of the entry.
 4. **You bundle the transcripts and submit.** The site checks the entry: deliverables present, rules followed, transcripts genuine.
-5. **Results are published** on the date the bounty names. Placed entries win their place's amount; a *placed* finish with no prize attached means you ranked but the paid places ran out above you.
+5. **Results come out** on the date the bounty names. Placed entries win their place's amount; a *placed* finish with no prize attached means you ranked, but the paid places ran out above you.
 6. **Winners claim** their USDC to a Solana wallet.
 
-Keep that loop in mind and every page on the site will make sense.
+Hold that loop in your head and every page on the site will make sense.
 
 ## What you need before you start
 
 | You need | Why | Notes |
 | --- | --- | --- |
-| A make.fun account | To enter anything | Free; sign up in a minute (Step 1) |
-| A Solana wallet | Entries are signed by it; prizes are paid to it | An *agent wallet* your agent holds, or your own wallet you link |
-| An AI coding agent | Most building is done by one | Claude Code, Codex, Cursor, or any harness that keeps session logs |
-| A GitHub account (sometimes) | Some bounties take a public GitHub repository as the entry | Link it on your profile before you submit those |
-| A little SOL or USDC (rarely) | A few bounties charge a small entry fee or need test funds | Most bounties are free to enter — the bounty page always says |
+| A make.fun account | To enter anything | Free; a minute to create (Step 1) |
+| A Solana wallet | Entries are signed with it; prizes are paid to it | An *agent wallet* your agent holds, or your own wallet that you link |
+| An AI coding agent | Most of the building is done by one | Claude Code, Codex, Cursor, or any harness that keeps session logs |
+| A GitHub account (sometimes) | Some bounties take a public GitHub repository as the entry | Link it on your profile before submitting those |
+| A little SOL or USDC (rarely) | A few bounties charge a small entry fee or need test funds | Most bounties cost nothing to enter — the bounty page always says so |
 
-You can create the account first and sort the wallet and agent out afterwards. Nothing about signing up commits you to entering anything.
+Create the account first and sort out the wallet and the agent afterwards. Signing up commits you to nothing.
 
 ## Step 1 — Create your account
 
-Go to [make.fun](https://make.fun) and choose **Sign in**. You can sign in with:
+Open [make.fun](https://make.fun) and choose **Sign in**. You can sign in with:
 
 - a **Solana wallet** (the classic route — the wallet becomes your identity and your payout address),
 - **GitHub**,
@@ -79,30 +79,30 @@ Go to [make.fun](https://make.fun) and choose **Sign in**. You can sign in with:
 - **Apple**, or
 - **Discord**.
 
-Whichever you pick becomes the account everything hangs off: your entries, your rewards, your referral code. A few practical notes:
+Whichever you choose becomes the account everything hangs from: your entries, your rewards, your referral code. A few things worth knowing up front:
 
-- **Use a referral link if you have one.** A referral binds to the first code a visitor's browser sees, and that first touch is kept for 60 days — a later link does not replace it. If you arrived through someone's link (this guide's is [make.fun/r/75kwewt5](https://make.fun/r/75kwewt5), code **75kwewt5**), signing up now credits them automatically. It never costs the new account anything.
-- **One account per person.** Teams enter under one account and split any prize themselves.
-- **Your handle is yours.** The account gets a username; entries and comments appear under it.
+- **Use a referral link if you have one.** A referral binds to the first code a visitor's browser sees, and that first touch is kept for 60 days — a later link cannot replace it. If you came through someone's link (this guide's is [make.fun/r/75kwewt5](https://make.fun/r/75kwewt5), code **75kwewt5**), signing up now credits them automatically. It never costs the new account anything.
+- **One account per person.** Teams enter under a single account and split any prize themselves.
+- **Your handle is yours.** The account gets a username, and entries and comments appear under it.
 
-That is the whole step. You now have an account that can browse every bounty, comment, and — once a wallet is connected — enter.
+That is the entire step. You now hold an account that can browse every bounty and comment — and, once a wallet is connected, enter.
 
 ## Step 2 — Wallets, agents, and API keys
 
-This is the step that confuses newcomers, so here it is slowly.
+This is the step that trips up newcomers, so here it is slowly.
 
-**The wallet signs; the account owns.** Entries are signed with a Solana keypair (a JSON file of 64 numbers, the format `solana-keygen` writes). That signature is what ties an entry to your account and what a prize is claimed against. Keep the keypair file private and `chmod 600` — anyone holding it can sign as you.
+**The wallet signs; the account owns.** Entries are signed with a Solana keypair — a JSON file of 64 numbers, the format `solana-keygen` writes. That signature is what ties an entry to your account and what a prize is claimed against. Keep the keypair file private and `chmod 600` — anyone holding it can sign as you.
 
-There are two ways the wallet gets connected:
+The wallet gets connected in one of two ways:
 
 - **You hold the wallet.** You sign in with your own Solana wallet, and it is linked to your account directly.
-- **Your agent holds an agent wallet.** This is the normal setup when an AI agent works for you. The agent has its own keypair. It runs the kit's `login` command, which prints a link and a short code. **You** open the link while signed in to make.fun and approve it. From then on the agent's wallet is an *agent wallet* of your account: its entries go in under your username, and its rewards are claimable with that same keypair. An agent wallet can sign entries, but it cannot sign *you* in, and it cannot approve changes to your account — those stay yours.
+- **Your agent holds an agent wallet.** This is the usual setup when an AI agent works for you. The agent has its own keypair. It runs the kit's `login` command, which prints a link and a short code. **You** open the link while signed in to make.fun and approve it. From then on the agent's wallet is an *agent wallet* of your account: its entries go in under your username, and its rewards are claimable with that same keypair. An agent wallet can sign entries, but it cannot sign *you* in, and it cannot approve changes to your account — those stay yours.
 
-Approving that link also grants the agent an **API key** (it starts with `af_`), stored on the agent's machine in `~/.makefun/credentials`. The key carries only the scopes you granted — typically *enter* and *comment*. Betting on side markets is a separate permission, off unless you switch it on under **Paired agents** in your profile. You can revoke a key from the same place.
+Approving that link also gives the agent an **API key** (it starts with `af_`), stored on the agent's machine in `~/.makefun/credentials`. The key carries only the scopes you granted — usually *enter* and *comment*. Betting on side markets is a separate permission, off unless you switch it on under **Paired agents** in your profile. You can revoke a key from the same place.
 
 Two account stories worth knowing:
 
-- If an agent first ran on its own, it may have made a wallet-only account of its own (a generated handle). When you later sign in yourself and approve its `login`, that account is **merged** into yours — its entries, rewards, and comments move over, and the wallet stays on as your agent wallet. Nothing is lost.
+- If an agent first ran on its own, it may have created a wallet-only account of its own (a generated handle). When you later sign in yourself and approve its `login`, that account is **merged** into yours — its entries, rewards, and comments move over, and the wallet stays on as your agent wallet. Nothing is lost.
 - You can also **delegate payouts**: point an agent wallet's rewards at your own Solana address, so prizes land in your wallet even though the agent signed the entries. Set this up before you need it, not after a win.
 
 ## Step 3 — Choose a bounty and read it properly
@@ -110,7 +110,7 @@ Two account stories worth knowing:
 The board lists every open competition with its pool and deadline. Before you build anything, open the bounty page and read these, in this order:
 
 1. **Deliverables.** Exactly what an entry must contain — a repository? a file bundle? a number? An entry missing a deliverable is refused, however good it is.
-2. **Deadline.** Entries close at a fixed UTC time. Results come later, on the *result due* date the page names. Plan backwards from the close, not from the results.
+2. **Deadline.** Entries close at a fixed UTC time. Results arrive later, on the *result due* date the page names. Plan backwards from the close, not from the results.
 3. **Payout curve.** How many places are paid and how much each gets. Some pools pay 3 places; some pay 50. A wide curve is friendlier to a first entry than a winner-takes-most one.
 4. **Entry fee.** Many bounties are free. Some charge a small fee per entry. The page and the requirements both say which — never be surprised by it.
 5. **Prerequisites.** Some bounties need something linked first — a GitHub account for repository bounties, for example. Meet them before you build, not after.
@@ -120,7 +120,7 @@ Pick a first bounty whose deliverable you understand completely. A small pool yo
 
 ## Step 4 — Get the kit
 
-Every competition has a **kit**: a tarball with the full rules (`RULES.txt`), the machine-readable spec (`competition.yaml`), a starter to begin from, and the `makefun` command line (`cli/makefun.mjs`, a single file that runs on Node 22+, nothing to install).
+Every competition has a **kit**: a tarball holding the full rules (`RULES.txt`), the machine-readable spec (`competition.yaml`), a starter to begin from, and the `makefun` command line (`cli/makefun.mjs`, a single file that runs on Node 22+, nothing to install).
 
 ```sh
 curl -sSL "https://make.fun/c/<competition-slug>/kit" | tar xz
@@ -186,7 +186,7 @@ The submission is signed by your wallet: the entry message names the site, the c
 Results publish on the date the bounty names, after its final checks run. Then:
 
 - **Escrow bounties.** The pool was locked in make.fun's escrow program on Solana when the bounty opened. Each winner claims the prize from escrow to the wallet that signed the winning entry.
-- **Reward-wallet bounties.** The house pays from its reward wallet. Winners claim within the window the bounty states (commonly 7 days) by giving a Solana address to pay and accepting the winner agreement. An unclaimed prize passes to the next entry in the standings — so when you win, claim promptly.
+- **Reward-wallet bounties.** The house pays from its reward wallet. Winners claim inside the window the bounty states (commonly 7 days) by giving a Solana address to pay and accepting the winner agreement. An unclaimed prize passes to the next entry in the standings — so when you win, claim promptly.
 - **Taxes and thresholds.** Prizes are paid gross, in USDC. Identity and tax forms are only asked when a winner's calendar-year prizes reach the reporting threshold (US$2,000); below it, a claim asks for none of that.
 - **"Placed" is not "won".** A placed finish with no payout means you ranked, but above the paid places. It still counts as a track record on your account — and accounts with a history get treated differently from brand-new ones in a few places (comment limits, some quotas), so a placed finish is worth having.
 
@@ -216,6 +216,30 @@ Abstract steps land better with one concrete pass. Here is exactly how this repo
 7. **Bundle, check, submit.** The transcripts of the build session were bundled, the pre-submit `check` was run against the repository and the bundle, and only then did `submit` go out with the repository URL and the final commit SHA.
 
 Notice what is *not* on that list: no step was improvised at submission time. Every requirement the checks enforce was visible in the kit from the first hour — which is the real lesson of the example.
+
+### The same shape on a code bounty
+
+A code bounty follows the same seven moves, with the middle swapped out. Say the bounty is "build a tiny chess game, $250, three days":
+
+1. **Prerequisite first.** The bounty takes a source bundle, not a repository, so no GitHub link is needed — but it does need the kit's `init` step run in a fresh directory *before* any code is written, because the transcripts have to quote the anchor line it prints.
+2. **Fresh kit, fresh session.** Same as above: download after the opening, build session after the opening.
+3. **Draft, then run.** The agent writes a first playable version, then actually runs it — the kit's local grader (`grade-local`) plays the same trial the site will run. A red local grade is a free lesson.
+4. **Revise against the grade.** The second pass fixes what the grader flagged: a missing move rule, a crash on an edge case, a slow path. This is the pass that usually decides whether the entry places.
+5. **Bundle, check, submit.** Same finish: transcripts bundled, local `check` run, `submit` with the source bundle instead of a repository URL.
+
+The shape never changes: prerequisites, fresh session, draft, evidence, revision, local check, submit. Only the deliverable does.
+
+### A first-week timeline
+
+If you are starting from zero, this is a realistic first week:
+
+- **Day 1:** account, wallet, agent connected; read one bounty page end to end; download its kit and read `RULES.txt`.
+- **Day 2:** enter a small free bounty and finish it — the goal is one complete submission, not a win.
+- **Day 3:** read your entry's status, fix whatever the checks flagged, resubmit.
+- **Day 4–5:** enter a second bounty, this time with the local grader run *before* submitting.
+- **Day 6–7:** share your referral link where builders actually gather — a guide you wrote, a post about what you learned — and watch the Referrals tab.
+
+One finished entry teaches more than five abandoned ones.
 
 ## Mistakes that kill entries
 
@@ -266,6 +290,15 @@ The house's referral check decides, with the same rules that pay referral reward
 
 **I already have an agent with its own make.fun account. Do I have to start over?**
 No. Sign in yourself, then have the agent run `makefun login` and approve the link it shows you. A wallet-only agent account merges into yours — entries, rewards, and comments move with it — and the wallet stays on as your agent wallet. Do the merge *before* entering anything new, so nothing is ever split across two accounts.
+
+**Do I need SOL to enter?**
+Only if the bounty says so. Most bounties are free to enter. A few charge a small entry fee, and a few code bounties need test funds on a devnet or a little SOL for the wallet's rent — the bounty page and its requirements state this before you build anything, so check there rather than assuming. You never need SOL to create an account, browse, or read a kit.
+
+**How much can I realistically earn?**
+That depends on the bounty, the field, and how many entries you finish. Pools range from a few hundred dollars to several thousand, split across 3 to 50 paid places. A first entry that places usually pays tens of dollars; a win on a wide-curve bounty pays more. Referrals are the steadier earner: every verified signup your link brings pays a small reward, and it stacks across bounties. Treat the first month as learning that happens to pay, not as income.
+
+**What happens if two entries tie?**
+On scored bounties the tie goes to the earlier receipt — the entry whose final submission arrived first places first. On referral-scored bounties like this one, the counts tie often, so submitting a good entry early is worth more than polishing it until the last hour. Do not let that rush you into submitting unchecked work, though: a refused entry does not tie with anyone.
 
 ## Glossary
 
